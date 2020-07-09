@@ -57,6 +57,6 @@ function quickSort(list) {
     }
 
     //Sort the left side again, then add on the pivot and right array
-    return quickSort(left).concat(pivot, right)
+    return quickSort(left).concat(pivot, sortArray(right))
 }
 return quickSort(nums)
